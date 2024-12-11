@@ -12,7 +12,7 @@ helm install arc \
 
 ```bash
 helm install "arc-runner-set" \
-    --namespace "arc-systems" \
+    --namespace "arc-runners" \
     --create-namespace \
     --set githubConfigUrl="https://github.com/yourusername/yourreponame" \
     --set githubConfigSecret.github_token="ghp_somepattokenhere342342234" \
