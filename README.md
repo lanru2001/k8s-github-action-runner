@@ -30,6 +30,7 @@ helm install "arc-runner-set" \
 
 We can now create our GitHub Actions Workflow. If you have an existing workflow, then go ahead. If not, use the simple one below and commit to the main branch of your repo you put in the githubConfigUrl.
 
+```bash
 name: CI
 on:
   workflow_dispatch:
@@ -44,4 +45,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           cat README.md
-         
+```
